@@ -32,7 +32,7 @@ func CheckAccounts(s *discordgo.Session) {
 			}
 		}
 
-		time.Sleep(15 * time.Minute)
+		time.Sleep(1 * time.Minute)
 	}
 }
 
