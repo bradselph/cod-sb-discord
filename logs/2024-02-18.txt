@@ -1,0 +1,219 @@
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0019] Invoked addaccount command                   
+[36mINFO[0m[0019] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=123 [36mtitle[0m=123 [36muser_id[0m=322728045708312577
+[36mINFO[0m[0020] SSO cookie verified                           [36mstatus_code[0m=0
+[36mINFO[0m[0030] Invoked addaccount command                   
+[36mINFO[0m[0030] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0038] SSO cookie verified                           [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0002] Invoked addaccount command                   
+[36mINFO[0m[0002] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[31mERRO[0m[0001] Error creating command removeaccount          [31merror[0m="HTTP 400 Bad Request, {\"message\": \"Invalid Form Body\", \"code\": 50035, \"errors\": {\"options\": {\"0\": {\"choices\": {\"0\": {\"value\": {\"_errors\": [{\"code\": \"STRING_TYPE_CONVERT\", \"message\": \"Could not interpret \\\"7\\\" as string.\"}]}}}}}}}"
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0001] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0001] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Updating command chikenmultikill             
+[36mINFO[0m[0001] Updating command accounasdt                  
+[36mINFO[0m[0002] Updating command addaccount                  
+[36mINFO[0m[0002] Updating command removeaccount               
+[36mINFO[0m[0002] Creating command removeaccount               
+[36mINFO[0m[0003] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Updating command chikenmultikill             
+[36mINFO[0m[0001] Updating command accounasdt                  
+[36mINFO[0m[0002] Updating command addaccount                  
+[36mINFO[0m[0002] Updating command removeaccount               
+[36mINFO[0m[0002] Creating command removeaccount               
+[36mINFO[0m[0003] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Updating command chikenmultikill             
+[36mINFO[0m[0001] Updating command accounasdt                  
+[36mINFO[0m[0001] Updating command addaccount                  
+[36mINFO[0m[0002] Updating command removeaccount               
+[36mINFO[0m[0020] Creating command removeaccount               
+[36mINFO[0m[0021] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0006] Invoked addaccount command                   
+[36mINFO[0m[0006] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=123 [36mtitle[0m=123 [36muser_id[0m=322728045708312577
+[36mINFO[0m[0006] SSO cookie verified                           [36mstatus_code[0m=0
+[36mINFO[0m[0009] Invoked addaccount command                   
+[36mINFO[0m[0009] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0017] SSO cookie verified                           [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0005] Invoked addaccount command                   
+[36mINFO[0m[0005] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0013] SSO cookie verified                           [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0010] Invoked addaccount command                   
+[36mINFO[0m[0010] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0018] SSO cookie verified                           [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0001] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0001] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0003] Invoked addaccount command                   
+[36mINFO[0m[0003] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0014] Invoked addaccount command                   
+[36mINFO[0m[0014] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0023] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0005] Updating command chikenmultikill             
+[36mINFO[0m[0005] Updating command accounasdt                  
+[36mINFO[0m[0005] Updating command addaccount                  
+[36mINFO[0m[0005] Updating command removeaccount               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0009] Invoked addaccount command                   
+[36mINFO[0m[0009] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0018] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0007] Updating command removeaccount               
+[36mINFO[0m[0021] Invoked addaccount command                   
+[36mINFO[0m[0021] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0030] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0007] Updating command removeaccount               
+[36mINFO[0m[0014] Invoked addaccount command                   
+[36mINFO[0m[0014] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0026] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0006] Updating command removeaccount               
+[36mINFO[0m[0014] Invoked addaccount command                   
+[36mINFO[0m[0014] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0023] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0010] Updating command removeaccount               
+[36mINFO[0m[0012] Invoked addaccount command                   
+[36mINFO[0m[0012] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0021] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0011] Account RustOtte status changed to shadowban 
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Creating command accountlogs                 
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0000] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0000] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Creating command accountlogs                 
+[36mINFO[0m[0001] Bot is running                               
+[36mINFO[0m[0019] Invoked addaccount command                   
+[36mINFO[0m[0019] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0028] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0037] Account RustOtte status changed to shadowban 
