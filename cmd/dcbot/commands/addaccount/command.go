@@ -2,6 +2,7 @@ package addaccount
 
 import (
 	"github.com/bwmarrin/discordgo"
+	"github.com/silenta-salmans/sbchecker/cmd/dcbot/commands/removeaccount"
 	"github.com/silenta-salmans/sbchecker/internal/database"
 	"github.com/silenta-salmans/sbchecker/internal/logger"
 	"github.com/silenta-salmans/sbchecker/internal/services"
@@ -137,6 +138,8 @@ func AddAccountCommand(s *discordgo.Session, i *discordgo.InteractionCreate) {
 			Flags:   discordgo.MessageFlagsEphemeral,
 			Content: "Account added",
 		})
+
+		removeaccount.UpdateAccountChoices(s, guildID)
 
 		go services.CheckSingleAccount(account, s)
 	}()

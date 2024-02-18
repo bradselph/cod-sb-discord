@@ -49,14 +49,16 @@ func CheckSingleAccount(account models.Account, discord *discordgo.Session) {
 	if result == lastStatus {
 		embed := &discordgo.MessageEmbed{
 			Title:       fmt.Sprintf("%s - %s", account.Title, EmbedTitleFromStatus(result)),
-			Description: fmt.Sprintf("The status of account %s has not changed <@%s>", account.Title, account.UserID),
+			Description: fmt.Sprintf("The status of account %s has not changed", account.Title),
 			Color:       GetColorForBanStatus(result),
 			Timestamp:   time.Now().Format(time.RFC3339),
 		}
 
-		_, err = discord.ChannelMessageSendEmbed(account.ChannelID, embed)
+		_, err = discord.ChannelMessageSendComplex(account.ChannelID, &discordgo.MessageSend{
+			Embed: embed,
+		})
 		if err != nil {
-			logger.Log.WithError(err).Error("Error sending embed message")
+			logger.Log.WithError(err).Error("Error sending message")
 		}
 
 		return
@@ -90,10 +92,12 @@ func CheckSingleAccount(account models.Account, discord *discordgo.Session) {
 		Timestamp:   time.Now().Format(time.RFC3339),
 	}
 
-	_, err = discord.ChannelMessageSendEmbed(account.ChannelID, embed)
+	_, err = discord.ChannelMessageSendComplex(account.ChannelID, &discordgo.MessageSend{
+		Embed:   embed,
+		Content: fmt.Sprintf("<@%s>", account.UserID),
+	})
 	if err != nil {
-		logger.Log.WithError(err).Error("Error sending embed message")
-		return
+		logger.Log.WithError(err).Error("Error sending message")
 	}
 }
 
