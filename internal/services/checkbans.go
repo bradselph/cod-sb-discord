@@ -40,6 +40,18 @@ func CheckSingleAccount(account models.Account, discord *discordgo.Session) {
 	lastStatus := account.LastStatus
 
 	if result == lastStatus {
+		embed := &discordgo.MessageEmbed{
+			Title:       fmt.Sprintf("%s - %s", account.Title, EmbedTitleFromStatus(result)),
+			Description: fmt.Sprintf("The status of account %s has not changed <@%s>", account.Title, account.UserID),
+			Color:       GetColorForBanStatus(result),
+			Timestamp:   time.Now().Format(time.RFC3339),
+		}
+
+		_, err = discord.ChannelMessageSendEmbed(account.ChannelID, embed)
+		if err != nil {
+			logger.Log.WithError(err).Error("Error sending embed message")
+		}
+
 		return
 	}
 
