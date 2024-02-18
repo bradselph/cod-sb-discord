@@ -18,8 +18,6 @@ func CheckAccounts(s *discordgo.Session) {
 		database.DB.Find(&accounts)
 
 		for _, account := range accounts {
-			logger.Log.WithField("account", account.Title).Info("Checking account")
-
 			var lastCheck time.Time
 			if account.LastCheck != 0 {
 				lastCheck = time.Unix(account.LastCheck, 0)
