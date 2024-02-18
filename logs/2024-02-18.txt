@@ -217,3 +217,20 @@
 [36mINFO[0m[0019] Add account command                           [36mchannel_id[0m=1208618555772510288 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
 [36mINFO[0m[0028] SSO cookie verification status                [36mstatus_code[0m=200
 [36mINFO[0m[0037] Account RustOtte status changed to shadowban 
+[36mINFO[0m[0000] Initializing database connection             
+[36mINFO[0m[0001] Connected to guild                            [36mguild[0m="lil bozos"
+[36mINFO[0m[0001] Creating command addaccount                  
+[36mINFO[0m[0001] Creating command removeaccount               
+[36mINFO[0m[0001] Creating command accountlogs                 
+[36mINFO[0m[0002] Bot is running                               
+[36mINFO[0m[0007] Invoked addaccount command                   
+[36mINFO[0m[0007] Add account command                           [36mchannel_id[0m=1205589504833097771 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m="MOE NOOBS" [36muser_id[0m=322728045708312577
+[36mINFO[0m[0016] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0024] Account MOE NOOBS status changed to shadowban 
+[36mINFO[0m[0036] Updating command removeaccount               
+[36mINFO[0m[0037] Updating command accountlogs                 
+[31mERRO[0m[0037] Error updating command accountlogs            [31merror[0m="HTTP 400 Bad Request, {\"message\": \"An application command with that name already exists\", \"code\": 40041}"
+[36mINFO[0m[0047] Invoked addaccount command                   
+[36mINFO[0m[0047] Add account command                           [36mchannel_id[0m=1205589504833097771 [36mguild_id[0m=1205589504157552741 [36msso_cookie[0m=NDIyODIwMzU5MzkyOTk5NDY1NDoxNzA5NDMzNTQ4MzU4OjIwMGQwMjgyMWYyOGM1NDYzZmZkZjRmYmI4ZmU2ZWM1 [36mtitle[0m=RustOtte [36muser_id[0m=322728045708312577
+[36mINFO[0m[0055] SSO cookie verification status                [36mstatus_code[0m=200
+[36mINFO[0m[0064] Account RustOtte status changed to shadowban 
