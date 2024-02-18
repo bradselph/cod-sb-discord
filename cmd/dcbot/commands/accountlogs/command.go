@@ -1,6 +1,8 @@
 package accountlogs
 
 import (
+	"fmt"
+
 	"github.com/bwmarrin/discordgo"
 	"github.com/silenta-salmans/sbchecker/internal/database"
 	"github.com/silenta-salmans/sbchecker/internal/logger"
@@ -73,12 +75,11 @@ func CheckAccountLogsCommand(s *discordgo.Session, i *discordgo.InteractionCreat
 		return
 	}
 
-	// send the latest 5 logs for the account
 	var logs []models.Ban
 	database.DB.Where("account_id = ?", accountId).Order("created_at desc").Limit(5).Find(&logs)
 
 	embed := &discordgo.MessageEmbed{
-		Title:       account.Title,
+		Title:       fmt.Sprintf("%s - %s", account.Title, account.LastStatus),
 		Description: "The last 5 logs for this account",
 		Color:       0x00ff00,
 		Fields:      make([]*discordgo.MessageEmbedField, len(logs)),
