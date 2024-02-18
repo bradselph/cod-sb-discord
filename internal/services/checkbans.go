@@ -38,6 +38,13 @@ func CheckSingleAccount(account models.Account, discord *discordgo.Session) {
 	}
 
 	lastStatus := account.LastStatus
+	account.LastCheck = time.Now().Unix()
+
+	err = database.DB.Save(&account).Error
+	if err != nil {
+		logger.Log.WithError(err).Error("Error saving account")
+		return
+	}
 
 	if result == lastStatus {
 		embed := &discordgo.MessageEmbed{
@@ -56,7 +63,6 @@ func CheckSingleAccount(account models.Account, discord *discordgo.Session) {
 	}
 
 	account.LastStatus = result
-	account.LastCheck = time.Now().Unix()
 
 	err = database.DB.Save(&account).Error
 	if err != nil {
