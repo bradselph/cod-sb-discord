@@ -12,10 +12,14 @@ import (
 
 func CheckAccounts(s *discordgo.Session) {
 	for {
+		logger.Log.Info("Starting periodic account check")
+
 		var accounts []models.Account
 		database.DB.Find(&accounts)
 
 		for _, account := range accounts {
+			logger.Log.WithField("account", account.Title).Info("Checking account")
+
 			var lastCheck time.Time
 			if account.LastCheck != 0 {
 				lastCheck = time.Unix(account.LastCheck, 0)
@@ -23,6 +27,8 @@ func CheckAccounts(s *discordgo.Session) {
 
 			if time.Since(lastCheck).Minutes() > 15 {
 				go CheckSingleAccount(account, s)
+			} else {
+				logger.Log.WithField("account", account.Title).Info("Account checked recently, skipping")
 			}
 		}
 
