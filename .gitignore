@@ -24,4 +24,5 @@ go.work
 *.db
 *.exe
 sbchecker
+sbchecker.db
 logs/*.txt
