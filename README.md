@@ -15,7 +15,7 @@ run the program
 
 ### commands
 
-`/addaccount [title] [sso cookie]` - adds a new account,
-`/removeaccount` to remove an account, the list will autopopulate
-
+`/addaccount [title] [sso cookie]` - adds a new account,  
+`/removeaccount` to remove an account, the list will autopopulate  
+  
 The bot will ping you and keep you updated on every status change.
