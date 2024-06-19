@@ -1,12 +1,12 @@
 package addaccount
 
 import (
+	"codstatusbot2.0/command/removeaccount"
+	"codstatusbot2.0/database"
+	"codstatusbot2.0/logger"
+	"codstatusbot2.0/models"
+	"codstatusbot2.0/services"
 	"github.com/bwmarrin/discordgo"
-	"github.com/silenta-salmans/sbchecker/cmd/dcbot/commands/removeaccount"
-	"github.com/silenta-salmans/sbchecker/internal/database"
-	"github.com/silenta-salmans/sbchecker/internal/logger"
-	"github.com/silenta-salmans/sbchecker/internal/services"
-	"github.com/silenta-salmans/sbchecker/models"
 )
 
 func RegisterCommand(s *discordgo.Session, guildID string) {
@@ -31,16 +31,36 @@ func RegisterCommand(s *discordgo.Session, guildID string) {
 		},
 	}
 
-	registeredCommands := make([]*discordgo.ApplicationCommand, len(commands))
-	for i, command := range commands {
-		logger.Log.Infof("Creating command %s", command.Name)
-		cmd, err := s.ApplicationCommandCreate(s.State.User.ID, guildID, command)
+	existingCommands, err := s.ApplicationCommands(s.State.User.ID, guildID)
+	if err != nil {
+		logger.Log.WithError(err).Error("Error getting application commands")
+		return
+	}
+
+	var existingCommand *discordgo.ApplicationCommand
+	for _, command := range existingCommands {
+		if command.Name == "addaccount" {
+			existingCommand = command
+			break
+		}
+	}
+
+	newCommand := commands[0]
+
+	if existingCommand != nil {
+		logger.Log.Info("Updating addaccount command")
+		_, err = s.ApplicationCommandEdit(s.State.User.ID, guildID, existingCommand.ID, newCommand)
 		if err != nil {
-			logger.Log.WithError(err).Errorf("Error creating command %s", command.Name)
+			logger.Log.WithError(err).Error("Error updating addaccount command")
 			return
 		}
-
-		registeredCommands[i] = cmd
+	} else {
+		logger.Log.Info("Creating addaccount command")
+		_, err = s.ApplicationCommandCreate(s.State.User.ID, guildID, newCommand)
+		if err != nil {
+			logger.Log.WithError(err).Error("Error creating addaccount command")
+			return
+		}
 	}
 }
 
@@ -61,7 +81,7 @@ func UnregisterCommand(s *discordgo.Session, guildID string) {
 	}
 }
 
-func AddAccountCommand(s *discordgo.Session, i *discordgo.InteractionCreate) {
+func CommandAddAccount(s *discordgo.Session, i *discordgo.InteractionCreate) {
 	logger.Log.Info("Invoked addaccount command")
 
 	title := i.ApplicationCommandData().Options[0].StringValue()
@@ -94,6 +114,9 @@ func AddAccountCommand(s *discordgo.Session, i *discordgo.InteractionCreate) {
 
 	s.InteractionRespond(i.Interaction, &discordgo.InteractionResponse{
 		Type: discordgo.InteractionResponseDeferredChannelMessageWithSource,
+		Data: &discordgo.InteractionResponseData{
+			Flags: discordgo.MessageFlagsEphemeral,
+		},
 	})
 
 	go func() {
@@ -117,11 +140,12 @@ func AddAccountCommand(s *discordgo.Session, i *discordgo.InteractionCreate) {
 		}
 
 		account = models.Account{
-			UserID:    userID,
-			Title:     title,
-			SSOCookie: ssoCookie,
-			GuildID:   guildID,
-			ChannelID: channelID,
+			UserID:          userID,
+			Title:           title,
+			SSOCookie:       ssoCookie,
+			GuildID:         guildID,
+			ChannelID:       channelID,
+			InteractionType: "channel",
 		}
 
 		result := database.DB.Create(&account)
@@ -140,7 +164,7 @@ func AddAccountCommand(s *discordgo.Session, i *discordgo.InteractionCreate) {
 		})
 
 		removeaccount.UpdateAccountChoices(s, guildID)
-
-		go services.CheckSingleAccount(account, s)
+		// unnecessary to check account status immediately after adding it causes a double response when first adding an account
+		// services.CheckSingleAccount(account, s)
 	}()
 }
